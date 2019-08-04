@@ -1,0 +1,304 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+.mobile-hidden {
+	display: none;
+}
+
+.full {
+	width: 100%;
+	height: auto;
+}
+
+.container {
+	width: calc(100% - 40px);
+	max-width: 800px;
+	margin: auto;
+}
+
+nav {
+	position: fixed;
+	background-color: #000;
+}
+
+nav a {
+	color: #fff;
+	display: inline-block;
+	padding: 12px 24px;
+}
+
+nav a:hover {
+	background-color: lightgray;
+	color: #000;
+}
+
+nav > a {
+	position: absolute;
+	padding: 12px 24px;
+	top: 0;
+	right: 0;
+}
+
+.hero img {
+	width: 100%;
+	height: auto;
+}
+
+.heading {
+	font-size: 30px;
+	letter-spacing: 4px;
+	text-align: center;
+	font-weight: 400;
+	margin-top: 50px;
+}
+
+.black {
+	color: #000;
+}
+
+.subhead {
+	text-align: center;
+	margin: 20px 0;
+	display: block;
+	color: gray;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.person	{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.person img {
+	width: 60%;
+	border-radius: 4px;
+	margin-top: 10px;
+}
+
+.tourDates {
+	margin-top: 50px;
+	padding-top: 1px;
+	background-color: #000;
+	padding-bottom: 35px;
+}
+
+.white {
+	color: #fff;
+}
+
+.ticketList {
+	background-color: #fff;
+}
+
+.ticketList li {
+	color: gray;
+	border-bottom: 1px solid #f1f1f1;
+	padding: 10px;
+	display: block;
+}
+
+.redbg {
+	background-color: #f44336;
+	padding: 5px;
+	margin-left: 5px;
+}
+
+.blackbg {
+	background-color: #000;
+	padding: 0 8px;
+	border-radius: 50%;
+	float: right;
+}
+
+.place {
+	background-color: #fff;
+	margin-top: 20px;
+	padding-bottom: 1px;
+}
+
+.description > * {
+	display: block;
+	margin: 15px 0 15px 15px;
+}
+
+.place img {
+	width: 100%;
+}
+
+button {
+	border: none;
+	background-color: #000;
+	color: #fff;
+	padding: 8px;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: lightgray;
+	color: #000;
+}
+
+.contact .fa {
+	width: 30px;
+}
+
+.contact p {
+	font-size: 16px;
+}
+
+.contact input {
+	display: block;
+	width: 100%;
+	border: 1px solid #f1f1f1;
+	padding: 8px 16px;
+}
+
+.contact input:nth-child(3) {
+	margin-top: 5px;
+}
+
+form {
+	margin-top: 15px;
+}
+
+form button {
+	float: right;
+	margin-top: 15px;
+}
+
+form::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.map {
+	margin-top: 50px;
+}
+
+.map img {
+	width: 100%;
+}
+
+.footer {
+	margin: 50px 0;
+	text-align: center;
+}
+
+.footer .fa {
+	font-size: 25px;
+	color: gray;
+	margin: 2px;
+}
+
+.footer p, .footer a {
+	color: gray;
+	margin-top: 10px;
+}
+
+.footer a {
+	text-decoration: underline;
+}
+
+.footer .fa:hover {
+	color: lightgray;
+}
+
+#partmenu a {
+	display: block;
+}
+
+.search:hover {
+	background-color: #f44336 !important;
+	color: #fff !important;
+}
+
+@media only screen and (min-width: 601px) {
+	.mobile-hidden {
+		display: block;
+	}
+
+	.desktop-hidden {
+		display: none;
+	}
+
+	#partmenu {
+		display: inline-block;
+	}
+
+	#partmenu li {
+		display: inline-block;
+	}
+
+	ul > li {
+		display: inline-block;
+	}
+
+	.hero {
+		position: relative;
+		z-index: -1;
+	}
+
+	.heroText {
+		position: absolute;
+		bottom: 50px;
+		text-align: center;
+		left: 50%;
+		transform: translate(-50%, 0);
+		color: #fff;
+	}
+
+	.desktop {
+		width: calc(100% / 3);
+		float: left;
+	}
+
+	.place {
+		width: calc(100% / 3 - 40px/3);
+		float: left;
+		margin-left: 20px;
+	}
+
+	.place:nth-child(4) {
+		margin-left: 0 !important;
+	}
+
+	.theBand::before, .theBand::after, .tourDates::before, 
+	.tourDates::after, .contact::before, .contact::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+	form {
+		float: right;
+		margin-top: 0;
+		display: block;
+		width: 350px;
+	}
+
+	.info {
+		float: left;
+	}
+
+	form input:nth-child(1), form input:nth-child(2) {
+		width: 170px !important;
+		display: inline-block !important;
+	}
+
+	form input:nth-child(2) {
+		float: right;
+	}
+
+}

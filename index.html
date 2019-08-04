@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Testing 2</title>
+</head>
+<body>
+
+	<nav class="full">
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<div id="partmenu" class="mobile-hidden">
+				<li><a href="#">BAND</a></li>
+				<li><a href="#">TOUR</a></li>
+				<li><a href="#">CONTACT</a></li>
+				<li><a href="#">MERCH</a></li>
+			</div>
+		</ul>
+		<a href="#" onclick="toggleMenu()" class="desktop-hidden"><i class="fa fa-bars"></i></a>
+		<a href="#" class="mobile-hidden search"><i class="fa fa-search"></i></a>
+	</nav>
+
+	<div class="hero full">
+		<img src="images/la.jpg">
+		<div class="heroText">
+			<h3 class="mobile-hidden">Los Angeles</h3>
+			<p class="mobile-hidden">We had the best time playing at Venice Beach!</p>
+		</div>
+	</div>
+
+	<div class="theBand container">
+		<h2 class="heading black">THE BAND</h2>
+		<i class="subhead">We love music</i>
+		<p class="justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<div class="person desktop">
+			<p>Name</p>
+			<img src="images/bandmember.jpg">
+		</div>
+		<div class="person desktop">
+			<p>Name</p>
+			<img src="images/bandmember.jpg">
+		</div>
+		<div class="person desktop">
+			<p>Name</p>
+			<img src="images/bandmember.jpg">
+		</div>
+	</div>
+
+	<div class="tourDates full">
+		<div class="container">
+			<h2 class="heading white">TOUR DATES</h2>
+			<i class="subhead">Remember to book your tickets!</i>
+			<ul class="ticketList">
+				<li>September <span class="redbg white">Sold out</span></li>
+				<li>October <span class="redbg white">Sold out</span></li>
+				<li>November <span class="blackbg white">3</span></li>
+			</ul>
+			<div class="place desktop">
+				<img src="images/newyork.jpg">
+				<div class="description">
+					<b>New York</b>
+					<p class="date">Fri 27 Nov 2016</p>
+					<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+					<button type="button">Buy Tickets</button>
+				</div>
+			</div>
+			<div class="place desktop">
+				<img src="images/paris.jpg">
+				<div class="description">
+					<b>Paris</b>
+					<p class="date">Sat 28 Nov 2016</p>
+					<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+					<button type="button">Buy Tickets</button>
+				</div>
+			</div>
+			<div class="place desktop">
+				<img src="images/sanfran.jpg">
+				<div class="description">
+					<b>San Francisco</b>
+					<p class="date">Sun 29 Nov 2016</p>
+					<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+					<button type="button">Buy Tickets</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="contact container">
+		<h2 class="heading black">CONTACT</h2>
+		<i class="subhead">Fan? Drop a note!</i>
+		<div class="info">
+			<p><i class="fa fa-map-marker"></i>Chicago, US</p>
+			<p><i class="fa fa-phone"></i>Phone: +00 151515</p>
+			<p><i class="fa fa-envelope"></i>Email: mail@mail.com</p>
+		</div>
+		<form>
+			<input type="text" name="name" placeholder="Name">
+			<input type="email" name="email" placeholder="Email">
+			<input type="text" name="message" placeholder="Message">
+			<button type="button">SEND</button>
+		</form>
+	</div>
+
+	<div class="map full">
+		<img src="images/map.jpg">
+	</div>
+
+	<div class="footer full">
+		<i class="fa fa-facebook-official"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-snapchat"></i>
+		<i class="fa fa-pinterest"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-linkedin"></i>
+		<p>Powered by <a href="#">w3.css</a></p>
+	</div>
+
+<script type="text/javascript">
+	function toggleMenu() {
+		var element = document.getElementById("partmenu");
+		element.classList.toggle("mobile-hidden");
+	}
+</script>
+
+</body>
+</html>
